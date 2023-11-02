@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+    int issuedate, duedate;
+    string bookname;
+    cout << "\nchoose an option.";
+    cout << "\n1. Borrow book\n2. Return book" << endl;
+    cin >> choice;
+    cout << endl;
+    
+    if (choice == 1)
+    {
+        cout << "\n\nEnter the book name = ";
+        cin >> bookname;
+        cout << "\nBook is available." << endl;
+        cout << "\nYou should return the book within 7 days.";
+        cout << "\nIn case of late return you shall be charged with $1 per day.";
+        cout << "\n\nEnter date of issue: ";
+        cin >> issuedate;
+        cout << "\n Enter return date: ";
+        cin >> duedate;
+        
+    }
+    else if (choice == 2)
+    {
+        cout << "\n\nEnter the book name = ";
+        cin >> bookname;
+        
+    }
+    else
+    {
+        cout << "\nInvalid choice.";
+    }
+
+
+	return 0;
+}
